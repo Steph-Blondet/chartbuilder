@@ -1,0 +1,157 @@
+<!-- <form method="POST" action="/addchart"> -->
+
+<form id="form">
+  <div style="overflow-x:auto;">
+    <table class="table table-bordered">
+      <tr>
+        <th></th>
+        <th class="text-center category-cell">A</th>
+        <th class="text-center data-cell">B</th>
+        <th class="text-center data-cell">C</th>
+        <th class="text-center data-cell">D</th>
+        <th class="text-center data-cell">E</th>
+        <th class="text-center data-cell">F</th>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">1</td>
+        <td><input type="text" name="rowTwo.category" ng-model="vm.labels[0]" class="category-cell"></td>
+        <td><input type="number" name="rowTwo.seriesA" ng-model="vm.data[0][0]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesB" ng-model="vm.data[1][0]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesC" ng-model="vm.data[2][0]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesD" ng-model="vm.data[3][0]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesE" ng-model="vm.data[4][0]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">2</td>
+        <td><input type="text" name="rowTwo.category" ng-model="vm.labels[1]" class="category-cell"></td>
+        <td><input type="number" name="rowTwo.seriesA" ng-model="vm.data[0][1]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesB" ng-model="vm.data[1][1]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesC" ng-model="vm.data[2][1]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesD" ng-model="vm.data[3][1]" class="data-cell"></td>
+        <td><input type="number" name="rowTwo.seriesE" ng-model="vm.data[4][1]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">3</td>
+        <td><input type="text" name="rowThree.category" ng-model="vm.labels[2]" class="category-cell"></td>
+        <td><input type="number" name="rowThree.seriesA" ng-model="vm.data[0][2]" class="data-cell"></td>
+        <td><input type="number" name="rowThree.seriesB" ng-model="vm.data[1][2]" class="data-cell"></td>
+        <td><input type="number" name="rowThree.seriesC" ng-model="vm.data[2][2]" class="data-cell"></td>
+        <td><input type="number" name="rowThree.seriesD" ng-model="vm.data[3][2]" class="data-cell"></td>
+        <td><input type="number" name="rowThree.seriesE" ng-model="vm.data[4][2]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">4</td>
+        <td><input type="text" name="rowFour.category" ng-model="vm.labels[3]" class="category-cell"></td>
+        <td><input type="number" name="rowFour.seriesA" ng-model="vm.data[0][3]" class="data-cell"></td>
+        <td><input type="number" name="rowFour.seriesB" ng-model="vm.data[1][3]" class="data-cell"></td>
+        <td><input type="number" name="rowFour.seriesC" ng-model="vm.data[2][3]" class="data-cell"></td>
+        <td><input type="number" name="rowFour.seriesD" ng-model="vm.data[3][3]" class="data-cell"></td>
+        <td><input type="number" name="rowFour.seriesE" ng-model="vm.data[4][3]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">5</td>
+        <td><input type="text" name="rowFive.category" ng-model="vm.labels[4]" class="category-cell"></td>
+        <td><input type="number" name="rowFive.seriesA" ng-model="vm.data[0][4]" class="data-cell"></td>
+        <td><input type="number" name="rowFive.seriesB" ng-model="vm.data[1][4]" class="data-cell"></td>
+        <td><input type="number" name="rowFive.seriesC" ng-model="vm.data[2][4]" class="data-cell"></td>
+        <td><input type="number" name="rowFive.seriesD" ng-model="vm.data[3][4]" class="data-cell"></td>
+        <td><input type="number" name="rowFive.seriesE" ng-model="vm.data[4][4]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">6</td>
+        <td><input type="text" name="rowSix.category" ng-model="vm.labels[5]" class="category-cell"></td>
+        <td><input type="number" name="rowSix.seriesA" ng-model="vm.data[0][5]" class="data-cell"></td>
+        <td><input type="number" name="rowSix.seriesB" ng-model="vm.data[1][5]" class="data-cell"></td>
+        <td><input type="number" name="rowSix.seriesC" ng-model="vm.data[2][5]" class="data-cell"></td>
+        <td><input type="number" name="rowSix.seriesD" ng-model="vm.data[3][5]" class="data-cell"></td>
+        <td><input type="number" name="rowSix.seriesE" ng-model="vm.data[4][5]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">7</td>
+        <td><input type="text" name="rowSeven.category" ng-model="vm.labels[6]" class="category-cell"></td>
+        <td><input type="number" name="rowSeven.seriesA" ng-model="vm.data[0][6]" class="data-cell"></td>
+        <td><input type="number" name="rowSeven.seriesB" ng-model="vm.data[1][6]" class="data-cell"></td>
+        <td><input type="number" name="rowSeven.seriesC" ng-model="vm.data[2][6]" class="data-cell"></td>
+        <td><input type="number" name="rowSeven.seriesD" ng-model="vm.data[3][6]" class="data-cell"></td>
+        <td><input type="number" name="rowSeven.seriesE" ng-model="vm.data[4][6]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">8</td>
+        <td><input type="text" name="rowEight.category" ng-model="vm.labels[7]" class="category-cell"></td>
+        <td><input type="number" name="rowEight.seriesA" ng-model="vm.data[0][7]" class="data-cell"></td>
+        <td><input type="number" name="rowEight.seriesB" ng-model="vm.data[1][7]" class="data-cell"></td>
+        <td><input type="number" name="rowEight.seriesC" ng-model="vm.data[2][7]" class="data-cell"></td>
+        <td><input type="number" name="rowEight.seriesD" ng-model="vm.data[3][7]" class="data-cell"></td>
+        <td><input type="number" name="rowEight.seriesE" ng-model="vm.data[4][7]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">9</td>
+        <td><input type="text" name="rowNine.category" ng-model="vm.labels[8]" class="category-cell"></td>
+        <td><input type="number" name="rowNine.seriesA" ng-model="vm.data[0][8]" class="data-cell"></td>
+        <td><input type="number" name="rowNine.seriesB" ng-model="vm.data[1][8]" class="data-cell"></td>
+        <td><input type="number" name="rowNine.seriesC" ng-model="vm.data[2][8]" class="data-cell"></td>
+        <td><input type="number" name="rowNine.seriesD" ng-model="vm.data[3][8]" class="data-cell"></td>
+        <td><input type="number" name="rowNine.seriesE" ng-model="vm.data[4][8]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">10</td>
+        <td><input type="text" name="rowTen.category" ng-model="vm.labels[9]" class="category-cell"></td>
+        <td><input type="number" name="rowTen.seriesA" ng-model="vm.data[0][9]" class="data-cell"></td>
+        <td><input type="number" name="rowTen.seriesB" ng-model="vm.data[1][9]" class="data-cell"></td>
+        <td><input type="number" name="rowTen.seriesC" ng-model="vm.data[2][9]" class="data-cell"></td>
+        <td><input type="number" name="rowTen.seriesD" ng-model="vm.data[3][9]" class="data-cell"></td>
+        <td><input type="number" name="rowTen.seriesE" ng-model="vm.data[4][9]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">11</td>
+        <td><input type="text" name="rowEleven.category" ng-model="vm.labels[10]" class="category-cell"></td>
+        <td><input type="number" name="rowEleven.seriesA" ng-model="vm.data[0][10]" class="data-cell"></td>
+        <td><input type="number" name="rowEleven.seriesB" ng-model="vm.data[1][10]" class="data-cell"></td>
+        <td><input type="number" name="rowEleven.seriesC" ng-model="vm.data[2][10]" class="data-cell"></td>
+        <td><input type="number" name="rowEleven.seriesD" ng-model="vm.data[3][10]" class="data-cell"></td>
+        <td><input type="number" name="rowEleven.seriesE" ng-model="vm.data[4][10]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">12</td>
+        <td><input type="text" name="rowTwelve.category" ng-model="vm.labels[11]" class="category-cell"></td>
+        <td><input type="number" name="rowTwelve.seriesA" ng-model="vm.data[0][11]" class="data-cell"></td>
+        <td><input type="number" name="rowTwelve.seriesB" ng-model="vm.data[1][11]" class="data-cell"></td>
+        <td><input type="number" name="rowTwelve.seriesC" ng-model="vm.data[2][11]" class="data-cell"></td>
+        <td><input type="number" name="rowTwelve.seriesD" ng-model="vm.data[3][11]" class="data-cell"></td>
+        <td><input type="number" name="rowTwelve.seriesE" ng-model="vm.data[4][11]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">13</td>
+        <td><input type="text" name="rowThirteen.category" ng-model="vm.labels[12]" class="category-cell"></td>
+        <td><input type="number" name="rowThirteen.seriesA" ng-model="vm.data[0][12]" class="data-cell"></td>
+        <td><input type="number" name="rowThirteen.seriesB" ng-model="vm.data[1][12]" class="data-cell"></td>
+        <td><input type="number" name="rowThirteen.seriesC" ng-model="vm.data[2][12]" class="data-cell"></td>
+        <td><input type="number" name="rowThirteen.seriesD" ng-model="vm.data[3][12]" class="data-cell"></td>
+        <td><input type="number" name="rowThirteen.seriesE" ng-model="vm.data[4][12]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">14</td>
+        <td><input type="text" name="rowFourteen.category" ng-model="vm.labels[13]" class="category-cell"></td>
+        <td><input type="number" name="rowFourteen.seriesA" ng-model="vm.data[0][13]" class="data-cell"></td>
+        <td><input type="number" name="rowFourteen.seriesB" ng-model="vm.data[1][13]" class="data-cell"></td>
+        <td><input type="number" name="rowFourteen.seriesC" ng-model="vm.data[2][13]" class="data-cell"></td>
+        <td><input type="number" name="rowFourteen.seriesD" ng-model="vm.data[3][13]" class="data-cell"></td>
+        <td><input type="number" name="rowFourteen.seriesE" ng-model="vm.data[4][13]" class="data-cell"></td>
+      </tr>
+      <tr>
+        <td class="text-center number-cell">15</td>
+        <td><input type="text" name="rowFifteen.category" ng-model="vm.labels[14]" class="category-cell"></td>
+        <td><input type="number" name="rowFifteen.seriesA" ng-model="vm.data[0][14]" class="data-cell"></td>
+        <td><input type="number" name="rowFifteen.seriesB" ng-model="vm.data[1][14]" class="data-cell"></td>
+        <td><input type="number" name="rowFifteen.seriesC" ng-model="vm.data[2][14]" class="data-cell"></td>
+        <td><input type="number" name="rowFifteen.seriesD" ng-model="vm.data[3][14]" class="data-cell"></td>
+        <td><input type="number" name="rowFifteen.seriesE" ng-model="vm.data[4][14]" class="data-cell"></td>
+      </tr>
+    </table>
+  </div>
+
+  <button class="btn btn-primary export-data" role="group" type="submit" ng-click="vm.exportJson(json)">Export from Server</button>
+
+  <button class="btn btn-primary save-download" type="submit" ng-click="vm.download()">Save & Download</button>
+
+</form>

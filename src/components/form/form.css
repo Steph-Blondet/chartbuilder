@@ -1,0 +1,63 @@
+/***** SPREADSHEET SECTION *****/
+.table>tbody>tr>th,
+.table>tbody>tr>td {
+  padding: 4px;
+}
+
+.table-bordered>tbody>tr>th,
+.table-bordered>tbody>tr>td {
+  border: 1px solid #B1B1B1;
+}
+
+.table-bordered>tbody>tr>td {
+  width: 10px;
+  padding: 0;
+  background-color: red;
+}
+
+th,
+td.text-center.number-cell {
+  background-color: #F0F0F0;
+  color: black;
+  font-family: 'Lato';
+  font-size: 12px;
+  vertical-align: middle;
+  padding: 4px 10px;
+}
+
+input {
+  border: 0px solid transparent;
+  padding: 5px;
+  height: 26px;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: black;
+}
+
+.category-cell,
+input .category-cell {
+  width: 119px;
+}
+
+.data-cell,
+input .category-cell {
+  width: 94.5px;
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  td.text-center.number-cell {
+    padding: 4px 5px 4px 5px;
+  }
+  .category-cell,
+  input .category-cell {
+    width: 80px;
+  }
+
+  .data-cell,
+  input .category-cell {
+    width: 50px;
+  }
+}
+
+
+/***** BUTTONS SECTION *****/

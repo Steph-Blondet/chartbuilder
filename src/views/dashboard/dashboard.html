@@ -1,0 +1,62 @@
+<div class="row no-marg" id="dashboard">
+  <div class="col-sm-5 form-container">
+    <h1>Chart Builder</h1>
+    <div class="row">
+      <div class="col-sm-7">
+        <h5>Graph Type</h5>
+        <ul class="nav nav-pills left">
+           <li class="dropdown active">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="dropdown-graph">Choose Graph Type</span><span class="caret"></span>
+              </button>
+              <ul id="graph-type" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a ng-click="vm.lineChart()" id="line-selection">Line Chart</a></li>
+                <li><a ng-click="vm.barChart()" id="bar-selection">Bar Chart</a></li>
+                <li><a ng-click="vm.pieChart()" id="pie-selection">Pie Chart</a></li>
+                <li><a ng-click="vm.radarChart()" id="radar-selection">Radar Chart</a></li>
+              </ul>
+           </li>
+        </ul>
+      </div>
+      <div class="col-sm-5">
+        <h5>Color Theme</h5>
+        <ul class="nav nav-pills left">
+           <li class="dropdown active">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="dropdown-theme">Choose Color Theme</span><span class="caret"></span>
+              </button>
+              <ul id="color-theme" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a ng-click="vm.lightTheme()">Light Theme</a></li>
+                <li><a ng-click="vm.darkTheme()">Dark Theme</a></li>
+              </ul>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="input-group">
+          <input type="text" class="form-control" ng-model="vm.title[0]" placeholder="Chart Title" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="col-sm-3 legend-container">
+        <md-switch aria-label="Switch 1" ng-click="vm.toggleLegend()">
+          Legend
+        </md-switch>
+      </div>
+    </div>
+
+    <form-component labels="vm.labels" data="vm.data" title="vm.title"></form-component>
+
+    <button class="btn btn-primary export-png" role="group" type="submit" ng-click="vm.exportPng();">Export PNG</button>
+  </div>
+  <div class="col-sm-7">
+    <line-chart-component data="vm.data" title="vm.title" options-line-chart="vm.optionsLineChart" series="vm.series" labels="vm.labels" colors="vm.colors" id="starter-line-chart"></line-chart-component>
+    <div id="line-chart"></div>
+    <div id="bar-chart"></div>
+    <div id="pie-chart"></div>
+    <div id="radar-chart"></div>
+  </div>
+</div>
