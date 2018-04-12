@@ -1,7 +1,7 @@
 # Chart Builder AngularJS #
 
 ### Synopsis
-_Chart Builder_ is a web app that lets you build four different types of charts (line, bar, pie and radar) with two different color themes (light and dark theme). You can add data to the spreadsheet, chage its title, and add a legend and see the chart updated automatically.
+_Chart Builder_ is a web app that lets you build four different types of charts (line, bar, pie and radar) with two different color themes (light and dark theme). You can add data to the spreadsheet, change its title, and add a legend to see the chart updated automatically.
 
 
 ### Technologies Used
@@ -12,7 +12,7 @@ _Chart Builder_ is a web app that lets you build four different types of charts 
 - HTML, CSS and JS
 
 
-### Dashboard Interaction
+### Dashboard View
 ![Chart Builder](src/assets/images/chart-builder-dashboard.png "Chart Builder view")
 
 
