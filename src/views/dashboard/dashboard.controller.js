@@ -11,7 +11,7 @@
           vm.title = ['Chart Title'];
           vm.labels = ['January', 'February', 'March', 'April', 'May', 'June'];
           vm.series = ['Series A', 'Series B', 'Series C', 'Series D', 'Series E'];
-          vm.colors = ['#F0564B', '#3C99C1', '#5CCE66', '#F6D344', '#6E61CE'];
+          vm.colors = ['#57AFA4', '#AA4465', '#CCB25D', , '#9EB25D', '#EEFCCE'];
           vm.data = [ [65, 59, 80, 81, 56, 55], [28, 48, 40, 19, 86, 27], [], [], [] ];
           vm.switch = false;
 
@@ -270,7 +270,7 @@
           vm.darkTheme = function() {
             console.log('hey dark theme - default');
             var dashboard = angular.element(document.querySelector('#dashboard'));
-            vm.colors = ['#F0564B', '#3C99C1', '#5CCE66', '#F6D344', '#6E61CE'];
+            vm.colors = ['#57AFA4', '#AA4465', '#CCB25D', , '#9EB25D', '#EEFCCE'];
             dashboard.addClass('canvas-dark-theme');
             dashboard.removeClass('canvas-light-theme');
           }
@@ -280,7 +280,7 @@
           vm.lightTheme = function() {
             console.log('hey light theme');
             var dashboard = angular.element(document.querySelector('#dashboard'));
-            vm.colors = ['#F25D5D', '#329AF0', '#51CF66', '#F9E332', '#845EF7'];
+            vm.colors = ['#57AFA4', '#AA4465', '#CCB25D', , '#9EB25D', '#EEFCCE'];
             dashboard.addClass('canvas-light-theme');
             dashboard.removeClass('canvas-dark-theme');
           }

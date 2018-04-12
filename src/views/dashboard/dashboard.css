@@ -1,7 +1,7 @@
 /***** HEADER SECTION *****/
 /* Heading */
 body {
-  background-color: #20242A;
+  background-color: #212121; 
 }
 
 .form-container {
@@ -107,7 +107,6 @@ md-switch {
 
 /***** BUTTON SECTION *****/
 .export-png {
-  float: left;
   display: inline-block;
   margin-top: 30px;
   background-color: #27627B;
